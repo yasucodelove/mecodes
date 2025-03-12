@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash's Coding Notes Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #ff416c; }
+            50% { text-shadow: 0 0 20px #ff4b2b; }
+            100% { text-shadow: 0 0 5px #ff416c; }
+        }
+        body { 
+            background: linear-gradient(45deg, #1a1a1a, #333); 
+            color: white; 
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container { margin-top: 50px; }
+        h1, h2, p {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            animation: glow 2s infinite alternate;
+        }
+        .note-card {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .note-card:hover {
+            transform: scale(1.05);
+        }
+        .note-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .buy-btn {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .buy-btn:hover {
+            background: linear-gradient(45deg, #ff4b2b, #ff416c);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Yash's Coding Handwritten Notes</h1>
+        <p>Get high-quality handwritten coding notes at the best prices!</p>
+        
+        <div class="row">
+            <div class="col-md-3">
+                <div class="note-card">
+                    <img src="https://coderstar.in/Notes/img/HTML%20EBOOK%20COVER.png" alt="HTML Notes">
+                    <h3>HTML Notes</h3>
+                    <p>Rs. 29</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="note-card">
+                    <img src="https://coderstar.in/Notes/img/JAVA%20EBOOK%20COVER.png" alt="Java Notes">
+                    <h3>Java Notes</h3>
+                    <p>Rs. 35</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="note-card">
+                    <img src="https://coderstar.in/Notes/img/JAVASCRIPT%20EBOOK%20COVER.png" alt="JavaScript Notes">
+                    <h3>JavaScript Notes</h3>
+                    <p>Rs. 35</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="note-card">
+                    <img src="https://coderstar.in/Notes/img/PYTHON%20EBOOK%20COVER.jpg" alt="Python Notes">
+                    <h3>Python Notes</h3>
+                    <p>Rs. 35</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="mt-4">Buy All Notes Combo at Rs. 99 Only</h2>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+</body>
+</html>
